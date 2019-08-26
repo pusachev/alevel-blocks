@@ -1,0 +1,23 @@
+<?php
+/**
+ * special.phtml
+ *
+ * @author    Pavel Usachev <pausachev@gmail.com>
+ * @copyright 2019 Pavel Usachev
+ * @license   https://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
+ */
+?>
+<?php /** @var \ALevel\Blocks\Block\RandomList $block */ ?>
+<div class="screen">
+    <h3><?= __('S.P.E.C.I.A.L') ?></h3>
+    <ul class="special-list">
+        <?php foreach ($block->getList() as $specialItem): ?>
+            <li>
+                <label>
+                    <strong><?= $specialItem['label']; ?></strong>:
+                    <?= /* @escapeNotVerified */ $specialItem['value']; ?>
+                </label>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * alevel_blocks_index_index.xml
+ *
+ * @author    Pavel Usachev <pausachev@gmail.com>
+ * @copyright 2019 Pavel Usachev
+ * @license   https://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="empty"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>S.P.E.C.I.A.L</title>
+        <css src="ALevel_Blocks::css/special.css" />
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block
+                    class="ALevel\Blocks\Block\RandomList"
+                    name="alevel.random.list"
+                    template="ALevel_Blocks::list/special.phtml"
+            />
+        </referenceContainer>
+    </body>
+</page>
