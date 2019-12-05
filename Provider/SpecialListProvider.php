@@ -85,6 +85,6 @@ class SpecialListProvider implements SpecialListProviderInterface
     {
         return $this->max > $this->min
             ? Random::getRandomNumber($this->min, $this->max)
-            : Random::getRandomNumber($this->min, $this->max);
+            : Random::getRandomNumber($this->max, $this->min);
     }
 }
